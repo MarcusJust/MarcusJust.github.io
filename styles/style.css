@@ -50,7 +50,6 @@ body, html{
     background-color: transparent;
 }
 
-}
 @media (max-width:568px){
     .paralax1, .paralax2{
         background-attachment: scroll;
