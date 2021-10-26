@@ -42,6 +42,9 @@ body, html{
     color: #fff;
     padding: 20px;
 }
+.trans{
+    background-color: transparent;
+}
 
 @media (max-width:568px){
     .paralax1, .paralax2{
