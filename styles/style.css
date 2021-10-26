@@ -49,7 +49,32 @@ body, html{
 .trans{
     background-color: transparent;
 }
-
+body > footer > ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+body> footer> ul> li> a{
+    text-decoration: none;
+    padding: 10px 10px;
+    font-size: 1.5em;
+    color: #fff;
+}
+body> footer{
+    color: #fff;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: row;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: space-around;
+}
+body>footer>h1{
+    text-align: center;
+    font-size: 27px;
+    text-transform: uppercase;
+}
 @media (max-width:568px){
     .paralax1, .paralax2{
         background-attachment: scroll;
