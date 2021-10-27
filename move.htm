@@ -13,7 +13,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">KoK</a>
+        <a class="navbar-brand" href="index.htm">KoK</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -28,5 +28,35 @@
           </ul>
         </div>
       </nav>
+      <section>
+        <img src="./img/paralax2.jpg" class="bg">
+
+        <img src="./img/decree.png" class="pointing">      
+
+        <div class="content">
+            <h2>Contact me<br><span>Please</span></h2>
+            <p>I will be very greatful if you let me know, what is wrong.</p>
+        </div>
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/marcus.just.921/"><img src="./img/facebook.png"></a></li>
+            <li><a href="https://www.instagram.com/marcus_just_/"><img src="./img/instagram.png"></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        document.addEventListener("mousemove",function(e){
+            const bg = document.querySelector(".bg")
+            const pointing = document.querySelector(".pointing")
+            const content = document.querySelector(".content")
+
+            bg.style.width = 100 + e.pageX/100 + "%";
+            bg.style.height = 100 + e.pageX/100 + "%";
+
+            pointing.style.right = 100 + e.pageX/2 + "px";
+
+            content.style.left = 100 + e.pageX/2.5 + "px";
+
+        })
+    </script>
 </body>
 </html>
